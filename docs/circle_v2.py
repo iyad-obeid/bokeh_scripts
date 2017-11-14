@@ -8,7 +8,7 @@ output_file("circle_v2.html")
 xx = [cos(radians(xx)) for xx in range(-1,360)]
 yy = [sin(radians(yy)) for yy in range(-1,360)]
 
-plot = figure(plot_width=400, plot_height=400, match_aspect=True, x_range=[-1.1,1.1], y_range=[-1.1,1.1], tools='save')
+plot = figure(plot_width=400, plot_height=400, match_aspect=True)
 plot.line(xx,yy,color="navy")
 
 # slider is here for some other stuff I'll be doing later
@@ -18,5 +18,5 @@ callback = CustomJS(code="""
 slider = Slider(start=0, end=360, value=15, step=15, title="degrees", callback=callback)
 layout = column(slider, plot)
 
-show(layout)
+show(plot)
 
