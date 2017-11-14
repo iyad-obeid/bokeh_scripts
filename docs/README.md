@@ -1,4 +1,9 @@
-# bokeh_scripts, yo! its here!
-A simple repository where I try to learn bokeh scripting
+Trying to draw a simple unit circle. Shouldn't be that hard.
 
-[Check this out](https://vectortronic.github.io/bokeh_scripts/docs/callback.html)
+### Circle with single point
+code
+result
+
+### Circle with multiple points
+code
+result
